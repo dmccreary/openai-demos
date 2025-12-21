@@ -2,34 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccreary.github.io/openai-demos/</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/openai-demos/checklist/</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/openai-demos/code-highlight-test/</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/openai-demos/contact/</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/openai-demos/glossary/</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/openai-demos/how-we-built-this-site/</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/openai-demos/license/</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/openai-demos/references/</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-12-21</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/openai-demos/sims/</loc>
+         <lastmod>2025-12-21</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/openai-demos/sims/bouncing-ball-with-elasticity/</loc>
+         <lastmod>2025-12-21</lastmod>
     </url>
 </urlset>
