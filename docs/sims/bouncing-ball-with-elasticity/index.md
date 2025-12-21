@@ -2,11 +2,9 @@
 
 <iframe
   src="./main.html"
-  title="Bouncing Ball with Elasticity MicroSim"
   loading="lazy"
   width="100%"
   height="560"
-  style="border: 1px solid #d0d0d0; border-radius: 8px;"
 ></iframe>
 
 ## How to Use the Simulation
@@ -15,7 +13,7 @@
 2. Drag the **Elasticity slider** toward 1.0 to show nearly perfect energy conservation or lower it toward 0.3 to demonstrate why balls eventually stop bouncing.
 3. Click **Restart** any time you want to re-seed the simulation and highlight how initial velocity affects the pattern of collisions.
 
-The MicroSim is implemented with [p5.js](https://p5js.org/); copy the contents of `bouncing-ball-with-elasticity.js` into the [online editor](https://editor.p5js.org/) for quick experimentation.
+The MicroSim is implemented with [p5.js](https://p5js.org/); copy the contents of `sketch.js` (and optionally `style.css`) into the [online editor](https://editor.p5js.org/) for quick experimentation.
 
 ## Controls
 
