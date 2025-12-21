@@ -1,0 +1,39 @@
+{
+  "title": "Bouncing Ball with Elasticity",
+  "slug": "bouncing-ball-with-elasticity",
+  "created": "2025-12-20",
+  "updated": "2025-12-20",
+  "description": "Interactive p5.js simulation that shows how a ball's bounce height and motion change as elasticity varies between inelastic and nearly perfect collisions.",
+  "subject": ["Physics", "Energy Transfer"],
+  "gradeLevel": ["Middle School (6-8)", "High School (9-10)"],
+  "durationMinutes": 12,
+  "learningObjectives": [
+    "Relate elasticity values to the amount of kinetic energy conserved after a collision.",
+    "Predict the effect of partial energy loss on bounce height and horizontal displacement.",
+    "Compare motion profiles for highly elastic and partially elastic materials."
+  ],
+  "prerequisites": [
+    "Students recognize gravity as a constant downward acceleration.",
+    "Students can describe kinetic energy qualitatively in terms of velocity."
+  ],
+  "controls": [
+    {
+      "type": "slider",
+      "label": "Elasticity",
+      "description": "Adjusts the coefficient of restitution between 0.30 (very inelastic) and 1.00 (perfectly elastic)."
+    },
+    {
+      "type": "button",
+      "label": "Pause / Resume",
+      "description": "Toggles the simulation loop to allow discussion and prediction."
+    },
+    {
+      "type": "button",
+      "label": "Restart",
+      "description": "Repositions the ball with a new starting velocity for fresh trials."
+    }
+  ],
+  "tags": ["MicroSim", "p5.js", "elasticity", "collisions", "physics"],
+  "author": "Generated with microsim-generator skill",
+  "version": "1.0.0"
+}

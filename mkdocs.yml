@@ -13,6 +13,9 @@ nav:
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
+  - MicroSims:
+      - MicroSim Library: sims/index.md
+      - Bouncing Ball with Elasticity: sims/bouncing-ball-with-elasticity/index.md
   - Contact: contact.md
  
 # CoderDojo Microsite Standards from here down

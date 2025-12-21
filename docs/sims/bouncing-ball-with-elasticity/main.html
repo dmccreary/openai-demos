@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bouncing Ball with Elasticity MicroSim</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont,
+          sans-serif;
+        background: #f7f7f7;
+        color: #1f1f1f;
+      }
+
+      .microsim {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      header h1 {
+        margin: 0 0 0.25rem;
+        font-size: clamp(1.5rem, 2vw, 2rem);
+      }
+
+      header p {
+        margin: 0;
+        color: #555;
+      }
+
+      .canvas-container {
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      }
+
+      #p5-canvas {
+        width: 100%;
+        min-height: 320px;
+      }
+
+      .control-panel {
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .control {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+
+      label {
+        font-weight: 600;
+      }
+
+      input[type="range"] {
+        accent-color: #0078d4;
+      }
+
+      .slider-readout {
+        font-variant-numeric: tabular-nums;
+        color: #0078d4;
+      }
+
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      button {
+        padding: 0.6rem 1.5rem;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+
+      #pause-btn {
+        background: #0f62fe;
+        color: #fff;
+        box-shadow: 0 3px 8px rgba(15, 98, 254, 0.25);
+      }
+
+      #restart-btn {
+        background: #e5e5e5;
+        color: #222;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+      }
+
+      button:active {
+        transform: translateY(1px);
+        box-shadow: none;
+      }
+
+      .tip {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #444;
+      }
+
+      @media (max-width: 600px) {
+        .button-row {
+          flex-direction: column;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="microsim">
+      <header>
+        <h1>Bouncing Ball with Elasticity</h1>
+        <p>
+          Observe how changing elasticity alters the way energy transfers during
+          collisions with the floor and walls.
+        </p>
+      </header>
+
+      <section class="canvas-container">
+        <div
+          id="p5-canvas"
+          role="img"
+          aria-label="Interactive canvas showing a bouncing ball."
+        ></div>
+      </section>
+
+      <section class="control-panel" aria-label="Simulation controls">
+        <div class="control">
+          <label for="elasticity-slider">
+            Elasticity (0 = no bounce, 1 = perfect bounce)
+          </label>
+          <input
+            id="elasticity-slider"
+            type="range"
+            min="0.3"
+            max="1"
+            step="0.05"
+            value="0.8"
+            aria-valuemin="0.3"
+            aria-valuemax="1"
+            aria-valuenow="0.8"
+          />
+          <div>
+            Current elasticity:
+            <span id="elasticity-value" class="slider-readout">0.80</span>
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button id="pause-btn" type="button">Pause</button>
+          <button id="restart-btn" type="button">Restart</button>
+        </div>
+
+        <p class="tip">
+          Tip: Slide elasticity toward 1.0 to observe nearly perfect energy
+          conservation, or lower it to show why balls eventually stop bouncing.
+        </p>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+    <script src="bouncing-ball-with-elasticity.js"></script>
+  </body>
+</html>
