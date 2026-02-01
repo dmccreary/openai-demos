@@ -18,7 +18,7 @@ nav:
       - Bouncing Ball with Elasticity: sims/bouncing-ball-with-elasticity/index.md
   - Contact: contact.md
  
-# CoderDojo Microsite Standards from here down
+# Dan's Microsite Standards from here down
 
 theme:
   name: material
@@ -44,7 +44,7 @@ theme:
 plugins:
   - search
   - social
-  
+
 markdown_extensions:
   - admonition
   - md_in_html
@@ -62,4 +62,7 @@ extra_css:
 #    property: G-XXXX
 copyright: Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
 extra:
+  schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
+  textbook_name: Mkdocs Template Site
+  textbook_version: "1.0"
   generator: false
